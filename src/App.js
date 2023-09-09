@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Login from "./Pages/Login/Login";
+import Cadastro from "./Pages/Cadastro/Cadastro";
+import Home from "./Pages/Home/Home";
+import { ChakraProvider } from '@chakra-ui/react';
+import Inicial from "./Pages/Inicial/Inicial";
+import Header from "./Componentes/Header/Header";
+import Perfil from "./Pages/Perfil/Perfil";
+import Postar from "./Pages/Postar/Postar";
+import MinhaP from "./Pages/MinhaP/MinhaP";
+import React from 'react';
+import Rotas from './rotas/Rotas'
+import Footer from "./Pages/Footer/Footer";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ChakraProvider>
+          <Rotas/>
+      </ChakraProvider>
+
+    </>
   );
 }
 
