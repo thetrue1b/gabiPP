@@ -1,12 +1,15 @@
 import { IconButton } from '@chakra-ui/react'
 import { Fundo } from './Inicial.jsx'
-import { CardInicial, M } from './Inicial.jsx'
+import { CardInicial } from './Inicial.jsx'
 import { Card, CardHeader, CardBody, CardFooter, Text, Image, Flex, Avatar, Box, Heading, Button } from '@chakra-ui/react'
 import Header from '../../Componentes/Header/Header'
 import { Container } from './Inicial.jsx'
 import { ArrowDownIcon } from '@chakra-ui/icons'
 import { EstilizaçãoB } from './Inicial.jsx'
 import Footer from '../Footer/Footer.js'
+import Like from '../../Componentes/Like/Like.js'
+import gabi from '../../assets/GABRIE.png'
+import ana from '../../assets/ANA.png'
 
 
 
@@ -23,7 +26,7 @@ function Inicial() {
                             <CardHeader>
                                 <Flex spacing='4'>
                                     <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-                                        <Avatar name='GM' src='' />
+                                        <Avatar name='GM' src={gabi} />
 
                                         <Box>
                                             <Heading size='sm'>Gabriela Munari</Heading>
@@ -60,7 +63,7 @@ function Inicial() {
 
                                 <EstilizaçãoB>
                                     <Button flex='1' variant='ghost' >
-                                        ❤️ Like
+                                        <Like/> Like
                                     </Button>
                                     <Button flex='1' variant='ghost' leftIcon={<ArrowDownIcon />}>
                                         Sarvar
@@ -77,7 +80,7 @@ function Inicial() {
                             <CardHeader>
                                 <Flex spacing='4'>
                                     <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-                                        <Avatar name='Ana Carolina Bitello' src='https://pbs.twimg.com/profile_images/1094977763860234245/BDmUGueu_400x400.jpg' />
+                                        <Avatar name='Ana Carolina Bitello' src={ana}/>
 
                                         <Box>
                                             <Heading size='sm'>Ana Carolina Bitello</Heading>
@@ -113,7 +116,7 @@ function Inicial() {
                             >
                                 <EstilizaçãoB>
                                     <Button flex='1' variant='ghost' >
-                                        ❤️ Like
+                                    <Like/> Like
                                     </Button>
                                     <Button flex='1' variant='ghost' leftIcon={<ArrowDownIcon />}>
                                         Sarvar
@@ -128,7 +131,7 @@ function Inicial() {
                             <CardHeader>
                                 <Flex spacing='4'>
                                     <Flex flex='1' gap='4' alignItems='center' flexWrap='wrap'>
-                                        <Avatar name='GM' src='https://media.licdn.com/dms/image/D4D03AQHU_y69sIyfYg/profile-displayphoto-shrink_800_800/0/1687105589340?e=2147483647&v=beta&t=Xkeg3Hi2ICkawn4-N8xdXsaqA9_7QBMZvF0eFfnnw0I' />
+                                        <Avatar name='EB' src='https://media.licdn.com/dms/image/D4D03AQHU_y69sIyfYg/profile-displayphoto-shrink_800_800/0/1687105589340?e=2147483647&v=beta&t=Xkeg3Hi2ICkawn4-N8xdXsaqA9_7QBMZvF0eFfnnw0I' />
 
                                         <Box>
                                             <Heading size='sm'>Enzo Bitencourt</Heading>
@@ -164,7 +167,7 @@ function Inicial() {
                             >
                                 <EstilizaçãoB>
                                     <Button flex='1' variant='ghost' >
-                                        ❤️ Like
+                                    <Like/> Like
                                     </Button>
                                     <Button flex='1' variant='ghost' leftIcon={<ArrowDownIcon />}>
                                         Sarvar
@@ -217,7 +220,7 @@ function Inicial() {
                             >
                                 <EstilizaçãoB>
                                     <Button flex='1' variant='ghost' >
-                                        ❤️ Like
+                                    <Like/> Like
                                     </Button>
                                     <Button flex='1' variant='ghost' leftIcon={<ArrowDownIcon />}>
                                         Sarvar

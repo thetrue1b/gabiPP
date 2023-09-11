@@ -41,7 +41,7 @@ export const CardInicial = styled.div`
 
 `
 export const EstilizaçãoB = styled.button`
-    margin-left: 111px;
+    margin-left: 50px;
     margin-top: -19px;
     
 `

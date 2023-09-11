@@ -2,7 +2,7 @@ import { Input } from '@chakra-ui/react'
 import { CardLogin, Imagem, Fundo, Titulo, Estilização, BotaoLogin, H1Clique, MesmaLinha, BotaoClique, } from './style'
 import ImgLogo from '../../assets/logo.png'
 import { Button} from '@chakra-ui/react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import axios from "axios"
 
@@ -11,6 +11,11 @@ function Login() {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
 
+    const navigate = useNavigate()
+
+    const goToHome = ()=>{
+        navigate('/Inicial') 
+    }
 
     const hadleSubmit = (e) => {
         e.preventDefault()
@@ -24,6 +29,7 @@ function Login() {
         })
             .then(response => {
                 alert(response.data.message)
+                goToHome()
             })
             .catch(error => console.log(error))
     }
@@ -60,9 +66,7 @@ function Login() {
 
                     <BotaoLogin>
                         <Button colorScheme='gray' variant='outline' fontSize='20px' color='white' type='submit'>
-                            <Link to="/Inicial">
                                 ENTRAR
-                            </Link>
                         </Button>
                     </BotaoLogin>
                 </CardLogin>
